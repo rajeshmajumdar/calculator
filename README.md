@@ -1,5 +1,8 @@
 # Samco Brokerage Calculator
 
+### Disclaimer
+This script is intended for Samco Broker, if you're using a different broker your charges might be different. I named the variable pretty well, so you can tweak the numbers according to your usecase, or simply raise an issue, I might add it if I feel like it.
+
 Basically wrote it for personal use, instead of checking there website after every trade. I decided to write a small python script to calculate.
 
 ### Usage
