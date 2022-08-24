@@ -22,6 +22,8 @@ Usage: calc.py [-h] [-i [INTRADAY ...]] [-d [DELIVERY ...]] [-c [CASHPLUS ...]] 
                           For cashplus delivery.
     -o [OPTIONS ...], --options [OPTIONS ...]
                           For options intraday/delivery.
+    -a [ADDORDER ...], --addorder [ADDORDER ...]
+                        Add this order to journal.
 ```
 
 For further usage help, you can execute the program with desired argument.
