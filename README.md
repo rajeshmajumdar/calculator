@@ -29,7 +29,7 @@ Usage: calc.py [-h] [-i [INTRADAY ...]] [-d [DELIVERY ...]] [-c [CASHPLUS ...]] 
 For further usage help, you can execute the program with desired argument.
 
 ### Misc. Tip
-You can add this file to your `.bashrc` or `.zshrc` if you're ZSH user, to use it as a command line tool, instead of navigating to that terminal everytime.
+You can add this file to your `.bashrc` or `.zshrc` if you're ZSH user, to use it as a command line tool, instead of navigating to that folder everytime.
 ```
 alias calc="python3 [PATH_TO_CALC.PY]"
 ```
