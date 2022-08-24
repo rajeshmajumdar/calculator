@@ -1,0 +1,44 @@
+{
+    "24082022": [
+        {
+            "orderType": "Intraday",
+            "position": "s",
+            "ratio": 4.0,
+            "time": "203704",
+            "result": "P",
+            "netPL": 78.8775486
+        },
+        {
+            "orderType": "Intraday",
+            "position": "s",
+            "ratio": 4.0,
+            "time": "203705",
+            "result": "P",
+            "netPL": 78.8775486
+        },
+        {
+            "orderType": "Intraday",
+            "position": "s",
+            "ratio": 4.0,
+            "time": "203706",
+            "result": "P",
+            "netPL": 78.8775486
+        },
+        {
+            "orderType": "Intraday",
+            "position": "s",
+            "ratio": 4.0,
+            "time": "203707",
+            "result": "P",
+            "netPL": 78.8775486
+        },
+        {
+            "orderType": "Intraday",
+            "position": "s",
+            "ratio": 4.0,
+            "time": "203707",
+            "result": "P",
+            "netPL": 78.8775486
+        }
+    ]
+}
