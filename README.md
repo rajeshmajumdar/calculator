@@ -1,4 +1,4 @@
-# Samco Brokerage Calculator
+# Brokerage Calculator
 
 ### Disclaimer
 This script is intended for Samco Broker, if you're using a different broker your charges might be different. I named the variable pretty well, so you can tweak the numbers according to your usecase, or simply raise an issue, I might add it if I feel like it.
