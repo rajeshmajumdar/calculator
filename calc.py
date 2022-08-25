@@ -2,16 +2,19 @@ import sys
 import argparse
 import json
 import datetime
+from os import getcwd, chdir, path
 
 class BrokerageCalculator:
     def __init__(self, buyPrice, sellPrice, qty):
+        chdir(path.dirname(path.abspath(__file__)))
         self.buyPrice = float(buyPrice)
         self.sellPrice = float(sellPrice)
         self.qty = int(qty)
         self.turnover = (self.buyPrice * self.qty) + (self.sellPrice * self.qty)
         self.avgPrice = self.turnover / (self.qty * 2)
         self.order: str = ""
-        self.journalFile = "journal.json"
+        directory = getcwd()
+        self.journalFile = directory + "/journal.json"
 
     def _getMaxBrokerage(self, brokerage: float) -> float:
         return 40.0 if brokerage > 40.0 else brokerage
@@ -37,8 +40,8 @@ class BrokerageCalculator:
             print("Something went wrong. Use -h for usage.")
         print(f"Reward:Risk ratio: {ratio}")
         now = datetime.datetime.now()
-        date = now.strftime("%d%m%Y")
-        time = now.strftime("%H%M%S")
+        date = now.strftime("%d-%m-%Y")
+        time = now.strftime("%H:%M:%S")
 
         data = {
                 "orderType": self.order,
@@ -46,7 +49,8 @@ class BrokerageCalculator:
                 "ratio": ratio,
                 "time": time,
                 "result": "P" if self.netProfit > 0 else "L",
-                "netPL": self.netProfit
+                "netPL": self.netProfit,
+                "quantity": self.qty
                 }
         try:
             f = open(self.journalFile, "r")
